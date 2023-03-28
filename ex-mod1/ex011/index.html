@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title> <!-- Define o título da página -->
+</head>
+<body>
+    <h1>Imagem dinâmica</h1> <!-- Título principal da página -->
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o zoom do seu navegador</p> <!-- Parágrafo de instrução para o usuário -->
+
+    <picture> <!-- Elemento que permite que o navegador escolha a melhor imagem para exibir em diferentes tamanhos de tela -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!-- Define a primeira fonte de imagem com largura máxima de tela de 750 pixels -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!-- Define a segunda fonte de imagem com largura máxima de tela de 1050 pixels -->
+        <img src="imagens/foto-g.png" alt="Imagem flexível"> <!-- Define a imagem padrão que será exibida caso as fontes de imagem anteriores não sejam atendidas -->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    Vamos aprender a reproduzir áudios em HTML5.
+    <p><audio src="midia/musica.mp3" controls></audio></p>
+    <!-- Formatos compatíveis: MP3 WAV OGG -->
+    <p> <audio preload="metadata" controls>
+            <source src="midia/musica.mp3" type="audio/mpeg">
+            Infelizmente o seu navegador não consegue reproduzir o áudio. <a href="midia/musica.mp3">Clique aqui para baixar o arquivo MP3.</a>
+        </audio> </p>
+</body>
+</html>
