@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-element
+            >   = children
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        :visited {
+            color: blueviolet;
+            text-shadow: 1px 1px 2px black;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: rgba(0, 0, 0, 0.741);
+            text-shadow: 0px 0px 1px black;
+        }
+        a:active {
+            color: gray;
+        }
+        
+        .especial::before {
+            content: '\2192  ';
+            color: grey;
+        }
+
+        .especial::after {
+            content: ' \2190';
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/crilord/" target="_blank" rel="external">GitHub</a></li>
+        <li><a href="https://facebook.com/crilordz/" target="_blank" rel="external" class="especial">Facebook</a></li>
+        <li><a href="https://linkedin.com/in/crilord/" target="_blank" rel="external">Linkedin</a></li>
+    </ul>
+</body>
+</html>
