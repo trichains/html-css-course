@@ -41,11 +41,11 @@ header > p {
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.62);
 }
 
-nav > aside {
+nav {
     margin-top: 60px;
 }
 
-aside > a {
+nav > a {
     color: #83E1AD;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -56,7 +56,7 @@ aside > a {
     border-radius: 5px;
 }
 
-aside > a:hover {
+nav > a:hover {
     background-color:#3DDB84;
     color: #033007;
 }
