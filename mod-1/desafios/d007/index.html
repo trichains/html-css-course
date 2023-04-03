@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagem flexivel</title> <!-- Define o título da página -->
+
+    <style> /* Define a seção de estilo para a página 
+           Define que o texto do parágrafo pode ser quebrado caso não haja espaço suficiente para a palavra */
+        p {
+            word-wrap: break-word; 
+        }
+    </style> <!-- Finaliza a seção de estilo -->
+
+</head>
+<body>
+    <h1>Imagem flexível</h1> <!-- Título principal da página -->
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1F92F</p> <!-- Parágrafo de instrução para o usuário -->
+
+    <picture> <!-- Elemento que permite que o navegador escolha a melhor imagem para exibir em diferentes tamanhos de tela -->
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-p.png" type="image/png"> <!-- Define a primeira fonte de imagem com largura máxima de tela de 750 pixels -->
+        <source media="(max-width: 1050px)" srcset="imagens/paisagem-m.png" type="image/png"> <!-- Define a segunda fonte de imagem com largura máxima de tela de 1050 pixels -->
+        <img src="imagens/paisagem-g.png" alt="Imagem flexível"> <!-- Define a imagem padrão que será exibida caso as fontes de imagem anteriores não sejam atendidas -->
+    </picture>
+</body>
+</html>

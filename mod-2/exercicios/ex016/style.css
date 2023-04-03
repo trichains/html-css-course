@@ -14,7 +14,8 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
-    width: 600px;
+    width: auto;
+    height: auto;
     padding: 10px;
     margin: auto;
 }
@@ -32,4 +33,5 @@ h2 {
 
 p {
     text-align: justify;
+    margin: auto;
 }
