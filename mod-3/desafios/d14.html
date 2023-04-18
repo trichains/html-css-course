@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        /* Estilo para o corpo da página */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo para a tabela */
+        table {
+            border-collapse: collapse;
+            /* Une as bordas das células */
+            width: 500px;
+        }
+
+        /* Estilo para as células de cabeçalho */
+        th,
+        td {
+            border: 2px solid black;
+            /* Borda preta de 2px */
+            padding: 10px;
+            /* Espaçamento interno de 10px */
+        }
+
+        /* Estilo para o cabeçalho da tabela */
+        thead {
+            background-color: #666666;
+            /* Fundo cinza escuro */
+            color: white;
+            /* Texto branco */
+        }
+
+        /* Estilo para a linha de média */
+        .media {
+            background-color: #666666;
+            /* Fundo cinza escuro */
+            color: white;
+            /* Texto branco */
+            text-align: left;
+            /* Alinhamento do texto à esquerda */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th> <!-- Cabeçalho para área -->
+                <th rowspan="2" scope="col">Disciplinas</th> <!-- Cabeçalho para disciplinas -->
+                <th colspan="2" scope="colgroup">Notas</th> <!-- Cabeçalho para notas -->
+                <th rowspan="2" scope="col">Média</th> <!-- Cabeçalho para média -->
+            <tr>
+                <th scope="col">Nota 1</th> <!-- Cabeçalho para a primeira nota -->
+                <th scope="col">Nota 2</th> <!-- Cabeçalho para a segunda nota -->
+            </tr>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th> <!-- Célula para a área Exatas -->
+                <td>Matemática</td> <!-- Célula para a disciplina Matemática -->
+                <td>0.0</td> <!-- Célula para a primeira nota de Matemática -->
+                <td>0.0</td> <!-- Célula para a segunda nota de Matemática -->
+                <td>0.0</td> <!-- Célula para a média de Matemática -->
+            </tr>
+            <tr>
+                <td>Física</td> <!-- Célula para a disciplina Física -->
+                <td>0.0</td> <!-- Célula para a primeira nota de Física -->
+                <td>0.0</td> <!-- Célula para a segunda nota de Física -->
+                <td>0.0</td> <!-- Célula para a média de Física -->
+            </tr>
+            <tr>
+                <td>Química</td> <!-- Célula para a disciplina Química -->
+                <td>0.0</td> <!-- Célula para a nota da disciplina Química -->
+                <td>0.0</td> <!-- Célula para a nota da disciplina Química -->
+                <td>0.0</td> <!-- Célula para a nota da disciplina Química -->
+            </tr>
+            <tr>
+                <td>Biologia</td> <!-- Célula para a disciplina Biologia -->
+                <td>0.0</td> <!-- Célula para a nota da disciplina Biologia -->
+                <td>0.0</td> <!-- Célula para a nota da disciplina Biologia -->
+                <td>0.0</td> <!-- Célula para a nota da disciplina Biologia -->
+            </tr>
+
+            <tr class="media">
+                <th colspan="4" scope="row">Média de Exatas</th> <!-- Célula para a média das disciplinas exatas -->
+                <td>0.0</td> <!-- Célula para a nota da média das disciplinas exatas -->
+            </tr>
+
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <!-- Célula para o título do grupo de disciplinas humanas -->
+                <td>História</td> <!-- Célula para a disciplina História -->
+                <td>0.0</td> <!-- Célula para a nota da disciplina História -->
+                <td>0.0</td> <!-- Célula para a nota da disciplina História -->
+                <td>0.0</td> <!-- Célula para a nota da disciplina História -->
+            </tr>
+
+            <tr>
+                <td>Geografia</td> <!-- Célula para a disciplina Geografia -->
+                <td>0.0</td> <!-- Célula para a nota da disciplina Geografia -->
+                <td>0.0</td> <!-- Célula para a nota da disciplina Geografia -->
+                <td>0.0</td> <!-- Célula para a nota da disciplina Geografia -->
+            </tr>
+
+            <tr class="media">
+                <th colspan="4" scope="row">Média de Humanas</th> <!-- Célula para a média das disciplinas humanas -->
+                <td>0.0</td> <!-- Célula para a nota da média das disciplinas humanas -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
